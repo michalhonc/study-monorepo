@@ -1,0 +1,247 @@
+/* CSS Document */
+* {padding: 0; margin: 0;}
+body {background-color: #D8D7ED;}
+hr {width: 200px; height: 10px; background-color: #694087; margin: 1.5% auto; border: none;}
+a {text-decoration: none;}
+
+nav.menu {
+  display: block;
+  width: 98%;
+  background: rgba(250, 250, 250, 1);  
+  font-size: 0;
+  margin: 5px auto;
+}
+
+nav.menu ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav.menu ul li { 
+  display: inline-block;
+}
+
+
+
+nav.menu a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 3em;
+  padding: 0 10px;
+}
+
+nav.menu a:hover {
+  background-color: rgba(0, 0, 0, 0.035);
+}
+
+.logo-section {
+  margin-top: 30px;
+}
+
+.logo-section img {
+  display: block;
+  margin: 0 auto;
+  height: 175px;
+  width: auto;
+}
+
+div.quote {
+  display: block;
+  text-align: center;
+  font-size: 1.15em;
+  line-height: 40px;
+  color: #4F4E4C;
+}
+
+.container {
+  display: block;
+  width:95%;
+  margin: 30px auto;
+}
+
+.container h1 {
+  font-family: Abril Fatface;
+  font-size: 40px;
+}
+.container h2 {
+  font-family: Abril Fatface;
+  font-size: 22px;
+  text-transform: lowercase;
+}
+
+p.autor {
+  text-align: left;
+  font-style: italic;
+  font-size: 15px;
+  color: #AB96BA;
+  padding-bottom: 30px;
+}
+
+.container p {
+  text-align: justify;
+  font-family: Ubuntu;
+  line-height: 25.728px;
+}
+
+.container p:not(:last-child) {
+  padding-bottom: 20px;
+}
+
+article.art {
+  background: rgba(250, 250, 250, 0.5);
+  padding: 5% 5%;
+  margin-bottom: 20px;
+}
+
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+  text-align: right;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
+
+ul.share-buttons img:hover {
+   -webkit-transform: scale(1.05);
+ -moz-transform:    scale(1.05);
+ -o-transform:      scale(1.05);
+ -ms-transform:     scale(1.05);
+}
+
+.login {
+  background-color: white;
+  max-width: 340px;
+  margin: 20px auto;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 5px 50px rgba(0,0,0,0.4);
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.login label {
+  font-weight: 700;
+  font-size: .8em;
+  color: #888;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 2em;
+}
+
+.login input {
+  margin-bottom: 20px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  font-size: .9em;
+  color: #888;
+}
+
+.login input:focus {
+  outline: none;
+  border-color: #665851;
+  transition: 0.5s;
+  color: #665851;
+}
+
+.login button {
+  margin-top: 0px;
+  border: 0;
+  border-radius: 2px;
+  color: white;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 0.7em;
+  letter-spacing: 1px;
+  background-color: #665851;
+  cursor:pointer;
+  outline: none;
+}
+
+.login button:hover {
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+p.title {
+
+  font-family: 'Roboto Slab', serif;
+  font-weight: 200;
+  font-size: 2em;
+  color: white;
+  background-color: #694087;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  text-shadow: 0 0 10px rgba(0,0,0,0.8);
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  top: 0px;
+}
+/* tablety and desktopy */
+@media (min-width: 768px) {
+
+nav.menu {
+  width: 100%;
+  margin: 0;
+}
+
+nav.menu ul {
+  width: 100%;
+  text-align: center;
+}
+
+nav.menu ul li {
+  width: auto;
+  display: inline-block;
+}
+
+nav.menu a {
+  line-height: 60px;
+  font-size: 23px;
+}
+
+nav.menu a:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+div.quote {
+  font-size: 1.75em;
+}
+
+.container {
+  width:660px;
+}
+
+nav.menu ul li:nth-child(4) {
+  margin-right: 180px;
+}
+
+
+p.autor {
+  text-align: left;
+  font-style: italic;
+  font-size: 15px;
+  color: #AB96BA;
+  padding-bottom: 30px;
+}
+
+.container p {
+  font-size: 18px;
+}
+
+}
+
+}
